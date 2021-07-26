@@ -8,6 +8,10 @@ The first thing I will work on will be to get the rudder pedals fully working, t
 I will get the axes working, before possibly moving into using button to control certain functionalit.
 The input responses will be based on mathematical models of simplified aircraft dynamics (eventually). 
 
+## rudder:
+![anim1](https://user-images.githubusercontent.com/79390007/127044037-acfad812-24fd-4c42-ac77-9a5bc0644dd3.gif)
+
+
 ## My Controller Set-up
 CH Pro Pedals (joystick id = 0)
 - axis 2 -> rudder (-1 = yaw left, 1 = yaw right)
