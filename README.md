@@ -1,5 +1,7 @@
 # Flight-Simulator
 
+**still a work in progress!**
+
 The idea behind this code is to provide a simple environment to refine the fine motor controls needed when flying an airplane.
 This is not really a simulator, but is purely intended to work on the eye-hand/foot coordination needed when flying.
 The code has been developed around my set-up which you can see below, it should be possible to modify to work on anything you may have with minimal effort.
