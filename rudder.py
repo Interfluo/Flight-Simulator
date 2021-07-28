@@ -36,6 +36,8 @@ class InputTest(object):
         counter = 0
         variable = 1
         clock = pygame.time.Clock()
+        vpx = 0
+        score = 0
         # ============================================================================ #
         while True:
             for i in range(self.joycount):
@@ -47,16 +49,27 @@ class InputTest(object):
                             # ============================================================================ #
                             # TODO: Adjust the travel parameter, make it to where the velocity depends on the rudder
                             #       position, not directly the position
-                            rudder_position = (center[0]+int(0.5*v*screen_width), center[1])
+                            vpx += int(0.5*v*10)
+                            rpx = center[0] + vpx
+                            rudder_position = (rpx, center[1])
                             pygame.draw.circle(screen, (120, 0, 200), rudder_position, 8)
 
                             # TODO: make the target change color when the rudder position is within a certain bounds of
                             #       the target position (green -> red maybe?)
-                            target_position = (center[0]+counter, center[1])
+                            tpx = center[0]+counter
+                            target_position = (tpx, center[1])
                             if counter == 500*variable:
                                 variable *= -1
                             counter += variable
-                            pygame.draw.circle(screen, (0, 150, 100), target_position, 25, 3)
+
+                            delta = 25
+                            if tpx + delta > rpx > tpx - delta:
+                                target_color = (0, 255, 0)
+                                score += 1
+                                print(score)
+                            else:
+                                target_color = (255, 0, 0)
+                            pygame.draw.circle(screen, target_color, target_position, 25, 3)
                             pygame.display.flip()
 
                             dt = clock.tick(100)  # set fps to 100
