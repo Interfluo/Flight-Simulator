@@ -11,7 +11,7 @@ I will get the axes working, before possibly moving into using button to control
 The input responses will be based on mathematical models of simplified aircraft dynamics (eventually). 
 
 ## rudder:
-![anim1](https://user-images.githubusercontent.com/79390007/127044037-acfad812-24fd-4c42-ac77-9a5bc0644dd3.gif)
+![anim3](https://user-images.githubusercontent.com/79390007/127248163-2e6c6465-1a48-49fc-bc0e-64fc1c10ed1d.gif)
 
 
 ## My Controller Set-up
