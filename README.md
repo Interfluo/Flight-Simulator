@@ -10,7 +10,9 @@ The first thing I will work on will be to get the rudder pedals fully working, t
 I will get the axes working, before possibly moving into using button to control certain functionalit.
 The input responses will be based on mathematical models of simplified aircraft dynamics (eventually). 
 
-please note that the color of the animations if off due to the software encoding I used to generate the gif, if you run the code the target will remain visible throughout
+
+
+*please note that the color of the animations if off due to the software encoding I used to generate the gif, if you run the code the target will remain visible throughout
 ## rudder:
 ![anim5](https://user-images.githubusercontent.com/79390007/129777967-38238cc0-d2dc-486b-ba6f-25fff751ab15.gif)
 
